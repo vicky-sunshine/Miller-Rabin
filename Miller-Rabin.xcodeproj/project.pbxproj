@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F49B6AA51CDDD0C400B8CF49 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49B6AA41CDDD0C400B8CF49 /* main.cpp */; };
+		F49B6AAD1CDDD10400B8CF49 /* BigNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */; };
+		F49B6AB01CDE327500B8CF49 /* Rabin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F49B6AAF1CDE327500B8CF49 /* Rabin.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F49B6A9F1CDDD0C400B8CF49 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F49B6AA11CDDD0C400B8CF49 /* Miller-Rabin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Miller-Rabin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49B6AA41CDDD0C400B8CF49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
+		F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
+		F49B6AAF1CDE327500B8CF49 /* Rabin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rabin.cpp; sourceTree = "<group>"; };
+		F49B6AB11CDE344400B8CF49 /* Rabin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rabin.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F49B6A9E1CDDD0C400B8CF49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F49B6A981CDDD0C400B8CF49 = {
+			isa = PBXGroup;
+			children = (
+				F49B6AA31CDDD0C400B8CF49 /* Miller-Rabin */,
+				F49B6AA21CDDD0C400B8CF49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F49B6AA21CDDD0C400B8CF49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F49B6AA11CDDD0C400B8CF49 /* Miller-Rabin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F49B6AA31CDDD0C400B8CF49 /* Miller-Rabin */ = {
+			isa = PBXGroup;
+			children = (
+				F49B6AA41CDDD0C400B8CF49 /* main.cpp */,
+				F49B6AAF1CDE327500B8CF49 /* Rabin.cpp */,
+				F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */,
+				F49B6AB11CDE344400B8CF49 /* Rabin.hpp */,
+				F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */,
+			);
+			path = "Miller-Rabin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F49B6AA01CDDD0C400B8CF49 /* Miller-Rabin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F49B6AA81CDDD0C400B8CF49 /* Build configuration list for PBXNativeTarget "Miller-Rabin" */;
+			buildPhases = (
+				F49B6A9D1CDDD0C400B8CF49 /* Sources */,
+				F49B6A9E1CDDD0C400B8CF49 /* Frameworks */,
+				F49B6A9F1CDDD0C400B8CF49 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Miller-Rabin";
+			productName = "Miller-Rabin";
+			productReference = F49B6AA11CDDD0C400B8CF49 /* Miller-Rabin */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F49B6A991CDDD0C400B8CF49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Hsnl;
+				TargetAttributes = {
+					F49B6AA01CDDD0C400B8CF49 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F49B6A9C1CDDD0C400B8CF49 /* Build configuration list for PBXProject "Miller-Rabin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F49B6A981CDDD0C400B8CF49;
+			productRefGroup = F49B6AA21CDDD0C400B8CF49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F49B6AA01CDDD0C400B8CF49 /* Miller-Rabin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F49B6A9D1CDDD0C400B8CF49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49B6AA51CDDD0C400B8CF49 /* main.cpp in Sources */,
+				F49B6AAD1CDDD10400B8CF49 /* BigNumber.cpp in Sources */,
+				F49B6AB01CDE327500B8CF49 /* Rabin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F49B6AA61CDDD0C400B8CF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F49B6AA71CDDD0C400B8CF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F49B6AA91CDDD0C400B8CF49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F49B6AAA1CDDD0C400B8CF49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F49B6A9C1CDDD0C400B8CF49 /* Build configuration list for PBXProject "Miller-Rabin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B6AA61CDDD0C400B8CF49 /* Debug */,
+				F49B6AA71CDDD0C400B8CF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F49B6AA81CDDD0C400B8CF49 /* Build configuration list for PBXNativeTarget "Miller-Rabin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F49B6AA91CDDD0C400B8CF49 /* Debug */,
+				F49B6AAA1CDDD0C400B8CF49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F49B6A991CDDD0C400B8CF49 /* Project object */;
+}
