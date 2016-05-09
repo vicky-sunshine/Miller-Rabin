@@ -1,5 +1,8 @@
 #include "BigNumber.hpp"
 // constructor
+BigNumber::BigNumber() {
+  BigNumber::BigNumber(0);
+}
 BigNumber::BigNumber(long long input_number) {
   long long unsign_number;
 
@@ -143,18 +146,15 @@ const BigNumber operator-(const BigNumber& lhs, const BigNumber& rhs) {
   std::vector<int8_t> abs_result;
   unsigned long min_size;
   int8_t borrow, sub;
+  BigNumber zero(0);
 
   // zero case
-  if (lhs == BigNumber(0) && rhs == BigNumber(0)) {
-    return BigNumber(0);
-  }
-
-  if (lhs == BigNumber(0)) {
-    return BigNumber(!rhs.sgn, rhs.data);
-  }
-
-  if (rhs == BigNumber(0)) {
+  if (rhs == zero) {
     return lhs;
+  }
+
+  if (lhs == zero) {
+    return BigNumber(!rhs.sgn, rhs.data);
   }
 
   // check is add or sub
@@ -163,7 +163,7 @@ const BigNumber operator-(const BigNumber& lhs, const BigNumber& rhs) {
     return lhs + BigNumber(!rhs.sgn, rhs.data);
   } else {
     if (BigNumber::abs_compare(lhs, rhs) == EQUAL) {
-      return BigNumber(0);
+      return zero;
     } else if (BigNumber::abs_compare(lhs, rhs) == BIGGER) {
       sgn = lhs.sgn;
 
@@ -246,6 +246,7 @@ const BigNumber operator/(const BigNumber& lhs, const BigNumber& rhs) {
   BigNumber remainder(true, lhs.data);
   BigNumber divisor(true, rhs.data);
   BigNumber quotient(0);
+  
   quotient.sgn = (lhs.sgn == rhs.sgn);
 
   int8_t count = 0;
@@ -313,7 +314,6 @@ const BigNumber operator%(const BigNumber& lhs, const BigNumber& rhs) {
   return remainder;
 }
 
-
 // output format
 std::ostream& operator<<(std::ostream& os, const BigNumber& rhs) {
   if (!rhs.sgn) {
@@ -332,3 +332,14 @@ std::ostream& operator<<(std::ostream& os, const BigNumber& rhs) {
 
   return os;
 }
+std::string BigNumber::to_string() {
+  std::stringstream ss;
+  std::string str;
+  
+  // turn BigNumber to String
+  ss << *this;
+  ss >> str;
+
+  return str;
+}
+
