@@ -27,8 +27,8 @@
 /* Begin PBXFileReference section */
 		F49B6AA11CDDD0C400B8CF49 /* Miller-Rabin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Miller-Rabin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49B6AA41CDDD0C400B8CF49 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BigNumber.cpp; sourceTree = "<group>"; };
-		F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BigNumber.hpp; sourceTree = "<group>"; };
+		F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BigNumber.cpp; path = "Miller-Rabin/BigNumber.cpp"; sourceTree = "<group>"; };
+		F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = BigNumber.hpp; path = "Miller-Rabin/BigNumber.hpp"; sourceTree = "<group>"; };
 		F49B6AAF1CDE327500B8CF49 /* Rabin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rabin.cpp; sourceTree = "<group>"; };
 		F49B6AB11CDE344400B8CF49 /* Rabin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rabin.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +47,7 @@
 		F49B6A981CDDD0C400B8CF49 = {
 			isa = PBXGroup;
 			children = (
+				F49B6AB21CE04CF800B8CF49 /* BigNumber */,
 				F49B6AA31CDDD0C400B8CF49 /* Miller-Rabin */,
 				F49B6AA21CDDD0C400B8CF49 /* Products */,
 			);
@@ -65,11 +66,18 @@
 			children = (
 				F49B6AA41CDDD0C400B8CF49 /* main.cpp */,
 				F49B6AAF1CDE327500B8CF49 /* Rabin.cpp */,
-				F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */,
 				F49B6AB11CDE344400B8CF49 /* Rabin.hpp */,
-				F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */,
 			);
 			path = "Miller-Rabin";
+			sourceTree = "<group>";
+		};
+		F49B6AB21CE04CF800B8CF49 /* BigNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F49B6AAB1CDDD10400B8CF49 /* BigNumber.cpp */,
+				F49B6AAC1CDDD10400B8CF49 /* BigNumber.hpp */,
+			);
+			name = BigNumber;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
